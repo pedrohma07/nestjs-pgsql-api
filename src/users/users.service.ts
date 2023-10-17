@@ -1,4 +1,4 @@
-import { Injectable, UnprocessableEntityException  } from '@nestjs/common';
+import { Injectable, UnprocessableEntityException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { UserRepository } from './users.repository';
 import { CreateUserDto } from './dtos/create.user.dto';

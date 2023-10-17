@@ -1,4 +1,4 @@
-import { EntityRepository, Repository } from 'typeorm';
+import { Repository } from 'typeorm';
 import { User } from './user.entity';
 import { CreateUserDto } from './dtos/create.user.dto';
 import { UserRole } from './user-roles.enum';
@@ -9,7 +9,6 @@ import {
   InternalServerErrorException,
 } from '@nestjs/common';
 
-@EntityRepository(User)
 export class UserRepository extends Repository<User> {
   async createUser(
     createUserDto: CreateUserDto,
